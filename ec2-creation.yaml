@@ -12,11 +12,7 @@ Resources:
           FromPort: 22
           ToPort: 22
           CidrIp: 0.0.0.0/0 # For better security, restrict this to your IP
-        - IpProtocol: tcp
-          FromPort: 99
-          ToPort: 99
-          CidrIp: 0.0.0.0/0 # For better security, restrict this to your IP
-       
+        
   # 2. Define the EC2 Instance
   MyEC2Instance:
     Type: AWS::EC2::Instance
@@ -28,5 +24,5 @@ Resources:
         - !Ref WebServerSecurityGroup
       Tags:
         - Key: Name
-          Value: system-creation
+          Value: automatic-creation
   
