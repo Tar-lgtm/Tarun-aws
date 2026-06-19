@@ -18,8 +18,8 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: t3.micro 
-      ImageId: ami-0741dc526e1106ae5 # Replace with a valid AMI ID for your region
-      KeyName: man
+      ImageId: ami-0e38835daf6b8a2b9 # Replace with a valid AMI ID for your region
+      KeyName: mum
       SecurityGroupIds:
         - !Ref WebServerSecurityGroup
       Tags:
